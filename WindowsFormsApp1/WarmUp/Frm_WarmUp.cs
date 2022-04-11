@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         public frm1()
         {
             InitializeComponent();
-            this.Text = "Hi";
+            this.Text = "Hi Welcome";
         }
 
 

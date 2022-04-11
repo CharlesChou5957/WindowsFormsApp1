@@ -46,15 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_WarmUp.cs">
+    <Compile Include="1.OverViews\Frm_Overview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_WarmUp.Designer.cs">
+    <Compile Include="1.OverViews\Frm_Overview.Designer.cs">
+      <DependentUpon>Frm_Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarmUp\Frm_WarmUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarmUp\Frm_WarmUp.Designer.cs">
       <DependentUpon>Frm_WarmUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="WarmUp\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_WarmUp.resx">
+    <EmbeddedResource Include="1.OverViews\Frm_Overview.resx">
+      <DependentUpon>Frm_Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarmUp\Frm_WarmUp.resx">
       <DependentUpon>Frm_WarmUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -78,6 +87,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="2.SqlConnection\" />
+    <Folder Include="3.Connected_Environment\" />
+    <Folder Include="4.Disconnected_DataSet\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
